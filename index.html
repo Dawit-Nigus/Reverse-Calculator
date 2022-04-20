@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div id="calculatorBody"> 
+    <div>  <input id="C" type="button" onclick="clearAll()" value="C"/> <span id="answer">0</span>    </div>
+      <div class="row">
+                 
+                 
+    </div>
+      <div class="row">
+          <input type="button" onclick="numericButton('7')" value="7" />
+          <input type="button" onclick="numericButton('8')" value="8"/>
+          <input type="button"  onclick="numericButton('9')" value="9"/>
+          <input type="button" onclick="operatorButton('+')" value="+"/>
+    </div>
+      <div class="row">
+          <input type="button"  onclick="numericButton('4')" value="4"/>
+          <input type="button" onclick="numericButton('5')" value="5"/>
+          <input type="button"  onclick="numericButton('6')" value="6"/>
+        <input type="button" onclick="operatorButton('-')" value="-"/>
+    </div>
+      <div class="row">
+          <input type="button"  onclick="numericButton('1')" value="1"/>
+          <input type="button"  onclick="numericButton('2')" value="2"/>
+          <input type="button"  onclick="numericButton('3')" value="3"/>
+          <input type="button" onclick="operatorButton('*')" value="*"/>
+    </div>
+      <div class="row">
+         <input type="button"  onclick="numericButton('0')" value="0"/>
+         <input type="button" onclick="numericButton('.')" value="."/>
+         <input id="equals" type="button"  onclick="calculateQueue(queue)" value="="/>
+         <input type="button" onclick="operatorButton('/')" value="/"/>
+              
+    
+    </div>
+    </div>
+    
+
+  <script src="script.js"></script>
+</body>
+
+</html>
